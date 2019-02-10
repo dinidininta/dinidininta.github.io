@@ -46,7 +46,7 @@
   $(document).ready(function(){
     for(let i = 0; i < projects.length; i++) {
       $('<div class="gallery col-md-6 col-lg-4">'+
-        '<a class="portfolio-item d-block mx-auto" href="#portfolio-modal-'+i+'"">'+
+        '<a class="portfolio-item d-block mx-auto" href="#portfolio-modal-'+i+'">'+
         '<div class="portfolio-item-caption d-flex position-absolute h-100 w-100">'+
         '<div class="portfolio-item-caption-content my-auto w-100 text-center text-white">'+
         '<i class="fas fa-search-plus fa-3x"></i>'+
@@ -107,7 +107,7 @@
     emptyCarousel();
     var n = parseInt(projects[index].slides);
     for(let i = 0; i < n; i++) {
-      $('<div class="carousel-item"><img src="img/portfolio/explorepalembang/'+i+'.png" class="img-fluid"></div>').appendTo('.carousel-inner');
+      $('<div class="carousel-item"><img class="img-fluid" src="img/portfolio/explorepalembang/'+i+'.png" alt=""></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
     }
       $('.carousel-item').first().addClass('active');
