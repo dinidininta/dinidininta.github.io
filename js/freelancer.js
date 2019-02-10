@@ -106,7 +106,7 @@
   var loadCarousel = function(index){
     emptyCarousel();
     for(let i = 0; i < projects[index].slides; i++) {
-      $('<div class="carousel-item"><img src="img/portfolio/explorepalembang/'+i+'".png" class="img-fluid"></div>').appendTo('.carousel-inner');
+      $('<div class="carousel-item"><img src="img/portfolio/explorepalembang/'+i+'.png" class="img-fluid"></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
     }
       $('.carousel-item').first().addClass('active');
