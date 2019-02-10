@@ -105,7 +105,8 @@
 
   var loadCarousel = function(index){
     emptyCarousel();
-    for(let i = 0; i < projects[index].slides; i++) {
+    var n = parseInt(projects[index].slides);
+    for(let i = 0; i < n; i++) {
       $('<div class="carousel-item"><img src="img/portfolio/explorepalembang/'+i+'.png" class="img-fluid"></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators');
     }
